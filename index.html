@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Calculate Age</title>
   <style>
@@ -7,6 +8,13 @@
       display: grid;
       place-items: center;
       height: 100vh;
+      background: #614385;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #516395, #614385);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #516395, #614385);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     }
 
     .form-container {
@@ -17,10 +25,12 @@
       background-color: #f2f2f2;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px rgb(255, 255, 255);
     }
 
-    .form-container label, input, button {
+    .form-container label,
+    input,
+    button {
       margin: 10px;
     }
 
@@ -42,6 +52,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="form-container">
     <label for="birthdate">Enter your birthdate:</label>
@@ -63,4 +74,5 @@
     }
   </script>
 </body>
+
 </html>
